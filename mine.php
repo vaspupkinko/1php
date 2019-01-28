@@ -49,7 +49,7 @@ if($pilih == "1" OR $pilih == "01") {
 	} else {
 		goto menu_1;
 	}
-} elseif($pilih == "7" OR $pilih == "07") {
+} elseif($pilih == "2" OR $pilih == "02") {
 	echo "2.0";
 	echo "Press".$yellow." [ENTER] ".$green."Back To menu";
 		fgets(STDIN);
