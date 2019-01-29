@@ -1,5 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/php
 <?php
+$local_ver = "0.0.2";
 if(strtolower(substr(PHP_OS, 0, 3)) == "win") {
 $bersih="cls";
 } else {
@@ -63,7 +64,6 @@ if($pilih == "1" OR $pilih == "01") {
 		goto menu;
 } elseif($pilih == "4" OR $pilih == "04") {
 	echo "2.0 \n";
-	$local_ver = file_get_contents('./ver.txt');
 	$top_ver = file_get_contents('https://vaspupkinko.github.io/1php/ver.txt');
         echo "Your version: ".$local_ver. " . \n" ;
 	echo "Latest version: ".$top_ver. " . \n" ;
