@@ -54,6 +54,20 @@ if($pilih == "1" OR $pilih == "01") {
 	echo "Press".$yellow." [ENTER] ".$green."Back To menu";
 		fgets(STDIN);
 		goto menu;
+} elseif($pilih == "3" OR $pilih == "03") {
+	echo "2.0";
+	$file = file_get_contents('./ver.txt');
+        echo $file;
+	echo "Press".$yellow." [ENTER] ".$green."Back To menu";
+		fgets(STDIN);
+		goto menu;
+} elseif($pilih == "4" OR $pilih == "04") {
+	echo "2.0";
+	$file = file_get_contents('https://github.com/vaspupkinko/1php/ver.txt');
+        echo $file;
+	echo "Press".$yellow." [ENTER] ".$green."Back To menu";
+		fgets(STDIN);
+		goto menu;
 } elseif($pilih == "exit" OR $pilih == "finish") {
 	echo "Bye!";
 	echo "Press".$yellow." [ENTER] ".$green."to exit...";
