@@ -63,7 +63,7 @@ if($pilih == "1" OR $pilih == "01") {
 		goto menu;
 } elseif($pilih == "4" OR $pilih == "04") {
 	echo "2.0";
-	$file = file_get_contents('http://sovok.rf.gd/1php/ver.txt');
+	$file = file_get_contents('http://sovok.rf.gd/1php');
         echo $file;
 	echo "Press".$yellow." [ENTER] ".$green."Back To menu";
 		fgets(STDIN);
