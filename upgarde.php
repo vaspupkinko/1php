@@ -11,6 +11,6 @@ if ($local_ver == $top_ver){
 } else {
 	unlink('./mine.php');
 	fgets(STDIN);
-	goto menu;
+	goto exit1;
 }
 exit1:
