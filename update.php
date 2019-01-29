@@ -1,4 +1,3 @@
-#!/data/data/com.termux/files/usr/bin/php
 <?php
 $local_ver = file_get_contents('./ver.txt');
 $top_ver = file_get_contents('https://vaspupkinko.github.io/1php/ver.txt');
