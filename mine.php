@@ -72,9 +72,21 @@ if($pilih == "1" OR $pilih == "01") {
 		fgets(STDIN);
 		goto menu;
 	} else {
-		echo "Please, upgrade this app \n";
-		fgets(STDIN);
-		goto menu;
+		update_menu:
+		echo "Please, upgrade this app \n \n";
+		echo "DO YOU WANT TO INSTALL UPDATES??? \n";
+		input("Y/N");
+		$update_question = trim(fgets(STDIN));
+		if($update_question == "y" OR $update_question == "Y") {
+			echo "installing...";
+			include('./update.php');
+		} elseif ($update_question == "n" OR $update_question == "N") {
+			goto menu;
+		} else {
+			echo "\n error \n";
+			fgets(STDIN);
+			goto update_menu;
+		}
 	}
 } elseif($pilih == "exit" OR $pilih == "finish") {
 	echo "Bye!";
