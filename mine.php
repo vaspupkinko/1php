@@ -62,12 +62,20 @@ if($pilih == "1" OR $pilih == "01") {
 		fgets(STDIN);
 		goto menu;
 } elseif($pilih == "4" OR $pilih == "04") {
-	echo "2.0";
-	$file = file_get_contents('https://vaspupkinko.github.io/1php/ver.txt');
-        echo $file;
-	echo "Press".$yellow." [ENTER] ".$green."Back To menu";
+	echo "2.0 \n";
+	$local_ver = file_get_contents('./ver.txt');
+	$top_ver = file_get_contents('https://vaspupkinko.github.io/1php/ver.txt');
+        echo "Your version: ".$local_ver. " . \n" ;
+	echo "Latest version: ".$top_ver. " . \n" ;
+	if ($local_ver == $top_ver){
+		echo "You have the latest ver... \n";
 		fgets(STDIN);
 		goto menu;
+	} else {
+		echo "Please, upgrade this app \n";
+		fgets(STDIN);
+		goto menu;
+	}
 } elseif($pilih == "exit" OR $pilih == "finish") {
 	echo "Bye!";
 	echo "Press".$yellow." [ENTER] ".$green."to exit...";
