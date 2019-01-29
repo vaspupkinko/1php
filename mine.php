@@ -23,8 +23,8 @@ echo "\n$yellow
 echo "\n$blue
 php\n";
 echo "$red=========================== Cvar1984 ))=====(@)>".$green."\n";
-echo "(01) 1\n
-(02) 2\n";
+echo "(01) 1\n"
+echo "(02) 2\n";
 echo "$red=========================== Cvar1984 ))=====(@)>".$green."\n";
 input("Chose");
 $pilih=trim(fgets(STDIN));
