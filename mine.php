@@ -32,7 +32,6 @@ $pilih=trim(fgets(STDIN));
 echo "$red=========================== Cvar1984 ))=====(@)>".$green."\n";
 if($pilih == "1" OR $pilih == "01") {
 	menu_1:
-	echo "1.0";
 	echo "(01) )>\n";
 	echo "(02) )>\n";
 	input("Chose");
@@ -51,19 +50,16 @@ if($pilih == "1" OR $pilih == "01") {
 		goto menu_1;
 	}
 } elseif($pilih == "2" OR $pilih == "02") {
-	echo "2.0";
 	echo "Press".$yellow." [ENTER] ".$green."Back To menu";
 		fgets(STDIN);
 		goto menu;
 } elseif($pilih == "3" OR $pilih == "03") {
-	echo "2.0";
 	$file = file_get_contents('./ver.txt');
         echo $file;
 	echo "Press".$yellow." [ENTER] ".$green."Back To menu";
 		fgets(STDIN);
 		goto menu;
 } elseif($pilih == "4" OR $pilih == "04") {
-	echo "2.0 \n";
 	$top_ver = file_get_contents('https://vaspupkinko.github.io/1php/ver.txt');
         echo "Your version: ".$local_ver. " . \n" ;
 	echo "Latest version: ".$top_ver. " . \n" ;
