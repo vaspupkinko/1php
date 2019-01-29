@@ -54,13 +54,16 @@ if($pilih == "1" OR $pilih == "01") {
 	echo "Press".$yellow." [ENTER] ".$green."Back To menu";
 		fgets(STDIN);
 		goto menu;
-} elseif($pilih == "ezit" OR $pilih == "finish") {
+} elseif($pilih == "exit" OR $pilih == "finish") {
 	echo "Bye!";
 	echo "Press".$yellow." [ENTER] ".$green."to exit...";
 		fgets(STDIN);
 		goto exit1;
 } else {
         echo "error:404 comand not found";
+        echo "Press".$yellow." [ENTER] ".$green."to move back...";
+		fgets(STDIN);
 	goto menu;
+	
 }
 exit1:
