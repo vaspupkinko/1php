@@ -23,7 +23,7 @@ echo "\n$yellow
 echo "\n$blue
 php\n";
 echo "$red=========================== Cvar1984 ))=====(@)>".$green."\n";
-echo "(01) 1\n"
+echo "(01) 1\n";
 echo "(02) 2\n";
 echo "$red=========================== Cvar1984 ))=====(@)>".$green."\n";
 input("Chose");
@@ -55,5 +55,6 @@ if($pilih == "1" OR $pilih == "01") {
 		fgets(STDIN);
 		goto menu;
 } else {
+        echo "error:404 comand not found";
 	goto menu;
 }
