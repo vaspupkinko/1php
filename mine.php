@@ -104,8 +104,8 @@ if($pilih == "1" OR $pilih == "01") {
 		\e[0;36m>> 1. base64
 		>> 2. url
 		>> 3. hex
-		>> 4. uu\e[0m\n "
-		echo "Choose: "
+		>> 4. uu\e[0m\n ";
+		echo "Choose: ";
 		$encode = fgets(STDIN);
 		if ($encode == "1") {
 				echo "\e[0;36mString To Encode: \e[0m";
