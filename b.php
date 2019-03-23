@@ -1,5 +1,8 @@
 <?php 
-echo "hello";
+echo "hello
+";
 $message = trim(fgets(STDIN));
-echo "lol";
+echo "lol
+";
+
 ?>
